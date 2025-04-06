@@ -1,0 +1,410 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="#"><img src="/img/Group 19 2.png" alt=""></a>
+                </div>
+                <div class="navbar__left">
+                    <ul class="nav-list">
+                        <a href="#" class="nav-link"><li>Главная</li></a>
+                        <a href="#" class="nav-link"><li>Про гида</li></a>
+                        <a href="#" class="nav-link"><li>Программа тура</li></a>
+                        <a href="#" class="nav-link"><li>Стоимость</li></a>
+                        <a href="#" class="nav-link"><li>Блог</li></a>
+                        <a href="#" class="nav-link"><li>Контакты</li></a>
+                    </ul>
+                    <button class="consultation">Консультация</button>
+                    <button class="nav__burger-btn" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        <!--SCRIPT__BURGER-->
+        <script defer>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("burger").addEventListener("click", function() {
+                    document.querySelector("header").classList.toggle("open")
+                })
+            })
+        </script>
+
+        <!--CONTENT_HEADER_MAIN-->
+
+            <div class="header__main">
+                <div class="main__title">
+                    <h1>
+                        Насладись прогулкой в горах <br>
+                        с командой единомышленников
+                    </h1>
+                </div>
+                <div class="form">
+                   <div class="form-search">
+                    <div class="form-group">
+                        <select id="location">
+                            <option>Локация для тура</option>
+                            <option>Вариант 1</option>
+                            <option>Вариант 2</option>
+                            <option>Вариант 3</option>
+                        </select>
+                       <button><img src="/img/ep_arrow-down.png" alt=""></button>
+                        <p>выберите из списка</p>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="date" placeholder="Укажите диапозон">
+                        <button class="date"><img src="/img/formkit_date.png" alt=""></button>
+                        <p>укажите диапозон</p>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="location">
+                            <option>Участники</option>
+                            <option>1 человек</option>
+                            <option>2 человека</option>
+                            <option>4+ человека</option>
+                        </select>
+                       <button><img src="/img/ep_arrow-down.png" alt=""></button>
+                        <p>минимум 4 человека</p>
+                    </div>
+                    
+                    <button class="search__programm">Найти программу</button>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">  
+        <div class="about__hike">
+            <div class="container">
+                <div class="img-right_content">
+                    <div class="image-item image-top">
+                       <img src="/img_main/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="image-item image-bottom">
+                       <img src="/img_main/Rectangle 4.png" alt="">
+                       <div class="fmgpofkg">
+                        <a href="#">
+                            <div class="ellipse"></div>
+                            <div class="img__play">
+                                <img src="/img_main/fluent_play-12-filled.png" alt="">
+                            </div>
+                          </a>
+                       </div>
+                    </div>
+                    <!-- <div class="img__2">
+                        <img src="/img_main/Rectangle 5.png" alt="">
+                        <div class="img__1">
+                            <img src="/img_main/Rectangle 4.png" alt="">
+                            <a href="#">
+                               <div class="ellipse"></div>
+                               <div class="img__play">
+                               <img src="/img_main/fluent_play-12-filled.png" alt="">
+                               </div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="text-left_content">
+                    <span style="color: #F2BE22;">о нашем походе</span>
+                    <h2>Исследуйте все горные массивы <br> мира вместе с нами</h2>
+                    <p>
+                    Его корни уходят в один фрагмент классической латыни 45 года <br>
+                    н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,<br>
+                    профессор латыни из колледжа Hampden-Sydney, штат <br> 
+                    Вирджиния, взял одно из самых странных слов в Lorem Ipsum,<br>
+                    consectetur"и занялся его поисками в классической латинской<br>
+                    литературе.
+                    </p>
+                    <button class="program__ture">Программа тура</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="our__offer">
+                <div class="container">
+                    <div class="content__offer">
+                        <div class="text_content_offer">
+                            <span style="color: #F2BE22;">наше предложение</span>
+                            <h2>Лучшие программы для тебя</h2>
+                            <p>
+                            Его корни уходят в один фрагмент классической латыни 45 года <br>
+                            н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,<br>
+                            профессор латыни из колледжа.
+                            </p>
+                                <div class="section">
+                                    <div class="img__block">
+                                        <img src="/img_main/Group 16.png" alt="">
+                                    </div>
+                                    <div class="content__text">
+                                        <h3>Опытный гид</h3>
+                                        <p>
+                                        Для современного мира базовый вектор развития предполагает <br>
+                                        независимые способы реализации соответствующих условий активизации.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="section">
+                                    <div class="img__block">
+                                        <img src="/img_main/Group 17.png" alt="">
+                                    </div>
+                                    <div class="content__text">
+                                        <h3>Безопасный поход</h3>
+                                        <p>
+                                        Для современного мира базовый вектор развития предполагает <br>
+                                        независимые способы реализации соответствующих условий активизации.
+                                        </p>
+                                    </div>
+                                </div>
+    
+                                <div class="section">
+                                    <div class="img__block">
+                                        <img src="/img_main/Group 18.png" alt="">
+                                    </div>
+                                    <div class="content__text">
+                                        <h3>Лояльные цены</h3>
+                                        <p>
+                                        Для современного мира базовый вектор развития предполагает <br>
+                                        независимые способы реализации соответствующих условий активизации.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <button class="price__programm">Стоимость программы</button>
+                                </div>
+                        </div>
+                        <div class="img_content_offer">
+                            <div class="img__item">
+                                <img src="/img_main/Rectangle 8.png" alt="">
+                            </div>
+                            <div class="img__item">
+                                <img src="/img_main/Rectangle 9.png" alt="">
+                            </div>
+                            <div class="img__item">
+                                <img src="/img_main/Rectangle 10.png" alt="">
+                            </div>
+                            <div class="img__item">
+                                <img src="/img_main/Rectangle 11.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+        
+         <div class="popular__destinations">
+            <div class="container">
+                <div class="content_text_popular">
+                    <span style="color: #F2BE22;">по версии отдыхающих</span>
+                    <h2 style="color: #18121E; margin-top: 0;">Популярные направления</h2>
+                </div>
+                <div class="img_content_popular">
+                    <a href="#"><div class="img_item"><img src="/img_main/popular_tour.png" alt="" id="default_img_1"></div></a>
+                    <a href="#"><div class="img_item"><img src="/img_main/popular_tour (1).png" alt="" id="default_img_2"></div></a>
+                    <a href="#"><div class="img_item"><img src="/img_main/popular_tour (2).png" alt="" id="default_img_3"></div></a>
+                </div>
+
+                <div class="button_popular">
+                    <button class="raiting_progamm">Рейтинг программ</button>
+                </div>
+            </div>
+            <!-- ==== ACTIVE__SLIDER ==== -->
+            <script defer>
+                  const sliderAdd = document.querySelector('.img_content_popular')
+                  const sliderAddItems = document.querySelectorAll('.img_item') 
+                  const breakpoint = 545
+              
+                  function addSliderContent() {
+                      if (window.innerWidth <= breakpoint) {
+                          sliderAdd.classList.add('slider__content')
+                          sliderAddItems.forEach(item => { 
+                              item.classList.add('slider__item')
+                          });
+                      } else {
+                          sliderAdd.classList.remove('slider__content')
+                          sliderAddItems.forEach(item => { 
+                              item.classList.remove('slider__item')
+                          });
+                      }
+                  }
+                  addSliderContent();
+                  window.addEventListener('resize', addSliderContent);
+            </script>
+
+            <!-- ==== CHANGE__IMG ==== -->
+            <script defer>
+                const imgPopular1 = document.getElementById("default_img_1")
+                const imgPopular2 = document.getElementById("default_img_2")
+                const imgPopular3 = document.getElementById("default_img_3")
+                const breakpointPopular = 470
+            
+                function changeImgCard2() {
+                    if (window.innerWidth <= breakpointPopular) { 
+                        imgPopular1.src = "/img_main/popular_tour ip13(1).png";
+                        imgPopular2.src = "/img_main/popular_tour ip13(2).png";
+                        imgPopular3.src = "/img_main/popular_tour ip13(3).png";
+                    } else {
+                        imgPopular1.src = "/img_main/popular_tour.png";
+                        imgPopular2.src = "/img_main/popular_tour (1).png";
+                        imgPopular3.src = "/img_main/popular_tour (2).png";
+                    }
+                }
+                changeImgCard2()
+                window.addEventListener('resize', changeImgCard2)
+            </script>
+         </div>  
+
+        <div class="blog">
+            <div class="container">
+                <div class="title__blog">
+                    <span style="color: #F2BE22;">делимся впечатлениями</span>
+                    <h2>Блог о путешествиях</h2>
+                </div>
+                <div class="card__content">
+                    <div class="card">
+                        <div class="content_img_card">
+                            <img src="/img_main/Rectangle 19.png" alt="" id="responsive_image_1">
+                        </div>
+                        <div class="content_text_card">
+                            <div class="text">
+                                <h2>Красивая Италия, какая она в реальности?</h2>
+                                <p>
+                                Для современного мира базовый вектор
+                                развития предполагает независимые
+                                способы реализации соответствующих
+                                условий активизации.
+                                </p>
+                            </div>
+                            <div class="footer_content_card">
+                                <span class="text-block__date">01/04/2023</span>
+                                <a href="#" class="text-block__link">читать статью</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content_img_card">
+                            <img src="/img_main/Rectangle 19 (1).png" alt="" id="responsive_image_2">
+                        </div>
+                        <div class="content_text_card">
+                            <div class="text">
+                                <h2>Долой сомнения! Весь мир открыт для вас!</h2>
+                                <p>
+                                Для современного мира базовый вектор
+                                развития предполагает независимые
+                                способы реализации соответствующих
+                                условий активизации ... независимые
+                                 способы реализации соответствующих усл...
+                                </p>
+                            </div>   
+                            <div class="footer_content_card">
+                                <span class="text-block__date">01/04/2023</span>
+                                <a href="#" class="text-block__link">читать статью</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content_img_card">
+                            <img src="/img_main/Rectangle 19 (2).png" alt="" id="responsive_image_3">
+                        </div>
+                        <div class="content_text_card">
+                            <div class="text">
+                                 <h2>Как подготовиться к путешествию в одиночку?</h2>
+                                 <p>
+                                 Для современного мира базовый вектор
+                                 развития предполагает.
+                            </p>
+                            </div>
+                            <div class="footer_content_card">
+                                <span class="text-block__date">01/04/2023</span>
+                                <a href="#" class="text-block__link">читать статью</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content_img_card">
+                            <img src="/img_main/Rectangle 19 (3).png" alt="" id="responsive_image_4">
+                        </div>
+                        <div class="content_text_card">
+                            <div class="text">
+                                <h2>Индия ... летим?</h2>
+                                <p>
+                                Для современного мира базовый.
+                                </p>
+                            </div>
+                            <div class="footer_content_card">
+                                <span class="text-block__date">01/04/2023</span>
+                                <a href="#" class="text-block__link">читать статью</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__material">
+                    <button class="other__materials">Другие материалы</button>
+                </div>
+            </div>
+            <!-- ==== CHANGE__IMG ==== -->
+            <script defer>
+                const imgCard1 = document.getElementById("responsive_image_1")
+                const imgCard2 = document.getElementById("responsive_image_2")
+                const imgCard3 = document.getElementById("responsive_image_3")
+                const imgCard4 = document.getElementById("responsive_image_4")
+                const breakpointCard = 1240
+
+                function changeImgCard() {
+                    if (window.innerWidth <= breakpointCard) {
+                        imgCard1.src="/img_main/Rectangle ip13(1).png"
+                        imgCard2.src="/img_main/Rectangle ip13(2).png"
+                        imgCard3.src="/img_main/Rectangle ip13(3).png"
+                        imgCard4.src="/img_main/Rectangle ip13(4).png"
+                    } else {
+                        imgCard1.src="/img_main/Rectangle 19.png"
+                        imgCard2.src="/img_main/Rectangle 19 (1).png"
+                        imgCard3.src="/img_main/Rectangle 19 (2).png"
+                        imgCard4.src="/img_main/Rectangle 19 (3).png"
+                    }
+                }
+                changeImgCard()
+                window.addEventListener('resize', changeImgCard)
+            </script>
+
+            <!-- ==== ACTIVE__SLIDER ==== -->
+            <script defer>
+                const sliderBlog = document.querySelector('.card__content')
+                const sliderBlogItem = document.querySelectorAll('.card')
+                const breakpointBlog = 545
+
+                function addSliderBlog() {
+                     if (window.innerWidth <= breakpointBlog) {
+                         sliderBlog.classList.add('slider_blog_content')
+                         sliderBlogItem.forEach(s => {
+                             s.classList.add('slider_item_blog')
+                         })
+                     } else {
+                         sliderBlog.classList.remove('slider_blog_content')
+                         sliderBlogItem.forEach(s => {
+                             s.classList.remove('slider_item_blog')
+                         })
+                     }
+                 }
+                  addSliderBlog()
+                window.addEventListener('resize', addSliderBlog)
+            </script>
+        </div> 
+    </main>
+</body>
+</html>

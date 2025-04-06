@@ -1,0 +1,249 @@
+@media(max-width: 1240px) {
+    .consultation {
+        display: none;
+    }
+    .container {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form {
+        width: 213px;
+        height: 52px;
+        background-color:#ffffff00;
+    
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .form-group {
+        display: none;
+    }
+    .about__hike .image-top {
+        display: none;
+    }
+    .image-bottom {
+        transform: none;
+        top: 420px;
+    }
+    .text-left_content {
+        margin-top: -450px;
+    }
+
+    .about__hike {
+        height: 850px;
+    }
+
+    .our__offer .img_content_offer {
+        width: 550px;
+    }
+
+    .blog {
+        height: auto;
+    }
+    .blog .card__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+        align-items: center;
+    }
+    .blog .card {
+        width: 285px;
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog .text {
+        height: 250px;
+    }
+    .blog .content_text_card {
+        padding: 0 15px 15px 15px;
+    }
+    .blog .content_text_card h2{
+       margin-top: 0;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container {
+        max-width: 900px;
+    }
+    .our__offer .img_content_offer {
+        display: none;
+    }
+    .content_text_popular h2 {
+        margin: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .nav__burger-btn {
+        display: block;
+    }
+    .nav-list {
+        display: block;
+        position: absolute;
+        left: -992px;
+        top: 0%;
+        padding: 100px 20px 20px 70px;
+        width: 992px;
+        height: 675px;
+        background-color: #1A3E3E;
+        transition: transform .5s;
+    }
+    .nav-link {
+        padding: 10px;
+    }
+    .header.open .nav-list {
+        transform: translateX(100%);
+    }
+
+    .header.open .nav__burger-btn span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+        height: 3px;
+    }
+    .header.open .nav__burger-btn span:nth-child(2) {
+        opacity: 0;
+    }
+    .header.open .nav__burger-btn span:nth-child(3) {
+        width: 30px;
+        transform: translateY(0) rotate(-45deg);
+        height: 3px;
+    }
+}
+
+@media(max-width: 937px) {
+    .container {
+        max-width: 800px;
+    }
+    .blog .card__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+    }
+}
+
+@media(max-width: 832px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: 600px;
+    }
+    .our__offer .price {
+        text-align: center;
+    }
+    .content_text_popular h2 {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width: 660px) {
+    .container {
+        max-width: 500px;
+    }
+    .main__title h1 {
+        font-size: 40px;
+    }
+    .about__hike .text-left_content span {
+        font-size: 16px;
+    }
+    .about__hike .text-left_content h2 {
+        font-size: 24px;
+    }
+    .about__hike .text-left_content p {
+        font-size: 16px;
+    }
+    .image-bottom {
+        transform: none;
+        top: 350px;
+    }
+    .our__offer{
+        height: 850px;
+    }
+    .blog .card__content {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 285px;
+    }
+    .blog .card {
+        flex: 0 0 auto; 
+        width: 100%; 
+        scroll-snap-align: start; 
+        margin-right: 10px;
+    }
+}
+@media(max-width: 545px) {
+    .slider__content {
+        width: 420px;
+    }
+}
+@media(max-width: 543px) {
+    .container {
+        max-width: 460px;
+    }
+    .main__title h1 {
+        font-size: 35px;
+    }
+    .our__offer{
+        height: 950px;
+    }
+    .about__hike .image-bottom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-left_content p {
+        font-size: 16px;
+    }
+    .img_content_popular img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 492px) { 
+    .container {
+        max-width: 350px;
+    }  
+    .main__title h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 485px) { 
+    
+    .container {
+        max-width: 400px;
+    }  
+    .main__title h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 439px) { 
+    
+    .container {
+        max-width: 380px;
+    }  
+}
+@media (max-width: 436px) { 
+    .container {
+        max-width: 360px;
+    }  
+}
+@media (max-width: 428px) { 
+    .container {
+        max-width: 340px;
+    }  
+}

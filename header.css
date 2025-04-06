@@ -1,0 +1,160 @@
+.header {
+    background-image: url("/img/Rectangle\ 1.png");
+    background-size: cover;
+    height: 965px;
+    min-height: 100vh; 
+    padding: 10px 20px 0 20px;
+}
+
+.header  .container {
+    height: 72px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+}
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-list {
+    display: flex;
+    gap: 23px;
+}
+.nav-list li {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FDFDFD;
+}
+.consultation {
+    width: 157px;
+    height: 44px;
+    background-color: #1A3E3E;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FDFDFD;
+    cursor:pointer;
+}
+
+.nav__burger-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background-color: rgba(5, 5, 5, 0);
+}
+.nav__burger-btn span { 
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 5px;
+    transition: transform .5s, opacity .5s;
+}
+.nav__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+.nav__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+    width: 20px;
+}
+
+
+
+
+.header__main {
+    margin-top: 455px;
+}
+.main__title h1 {
+    font-family:"NEXT ART";
+    font-size: 50px;
+    line-height: 150%;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: #FDFDFD;
+}
+.form {
+    width: 1180px;
+    height: 161px;
+    background-color:#ffffff33;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+
+    display: flex;
+    align-items: center;
+}
+.form-search {
+    width: 1095px;
+    height: 81px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+.form-group {
+    position: relative;
+}
+.form-group button {
+    position: absolute;
+    right: 20px;
+    padding: 15px 0px 15px 15px;
+    background-color: #fdd05500;
+    border: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+.form-group p {
+    font-size: 14px;
+    color: #FDFDFD;
+    margin: 0;
+    margin-top: 10px;
+    filter: opacity(0.9);
+}
+.form-group select,
+.form-group input {
+    width: 270px;
+    height: 52px;
+    padding-left: 20px;
+    border: solid #E1E3E4 1px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    color: #FDFDFD;
+    appearance: none; 
+
+}
+input[type="text"]::placeholder { 
+    color: #ffffff; 
+  }
+.form-group select:focus,
+.form-group input:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+.date {
+    position: absolute;
+}
+
+.search__programm {
+    width: 213px;
+    height: 52px;
+    background-color: #FDFDFD;
+    color: #1A3E3E;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2%;
+}
